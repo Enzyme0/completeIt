@@ -1,3 +1,4 @@
+const key = "ENTER YOUR KEY"
 function getActiveElementValue() {
     const activeElement = document.activeElement;
     if (activeElement && activeElement.tagName.toLowerCase() === 'input' && activeElement.type === 'text') {
@@ -30,7 +31,7 @@ async function postData(url = "", data = {}) {
       credentials: "same-origin", // include, *same-origin, omit
       headers: {
         "Content-Type": "application/json",
-         "Authorization": "Bearer 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",
+         "Authorization": "Bearer " + key,
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       redirect: "follow", // manual, *follow, error
