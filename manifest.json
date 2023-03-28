@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Adds openAI's gpt-3.5-turbo to your browser text inputs when you press tab + c.",
   "manifest_version": 3,
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "tabs", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
